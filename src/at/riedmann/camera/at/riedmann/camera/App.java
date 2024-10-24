@@ -7,7 +7,7 @@ public class App {
         Lens lens01 = new Lens(200);
         Camera camera01 = new Camera(1080, 500, "black", Camera.Resolution.MEDIUM, canon, sdCard01, lens01);
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10000; i++) {
             camera01.takePicture();
 
         }

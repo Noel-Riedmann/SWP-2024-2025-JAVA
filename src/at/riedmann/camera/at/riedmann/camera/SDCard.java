@@ -15,8 +15,13 @@ public class SDCard {
   }
 
   public void savePicture(Photo photo) {
-    this.photos.add(photo);
-    this.occupiedStorage += photo.getSize();
+    if (capacity >= occupiedStorage + photo.getSize()) {
+      this.photos.add(photo);
+      this.occupiedStorage += photo.getSize();
+    }
+    else{
+      System.out.println("SD-Card is full!");
+    }
   }
 
   public double getCapacity() {
@@ -28,7 +33,7 @@ public class SDCard {
   }
 
   public List<Photo> getPhotos() {
-      return photos;
+    return photos;
   }
 
 }

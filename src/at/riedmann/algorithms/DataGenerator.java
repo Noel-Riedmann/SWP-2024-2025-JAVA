@@ -5,19 +5,25 @@ import java.util.Random;
 public class DataGenerator {
     public static int[] generateDataArray(int size){
         Random random = new Random();
-        int[] array = {};
+        int[] data = {};
         for (int i = 0; i < size; i++) {
-            array[i] = random.nextInt();
+            data[i] = random.nextInt();
         }
-        return array;
+        return data;
     }
 
     public static int[] generateDataArray(int size, int min, int max){
         Random random = new Random();
-        int[] array = {};
+        int[] data = {};
         for (int i = 0; i < size; i++) {
-            array[i] = min + random.nextInt(max-min);
+            data[i] = min + random.nextInt(max-min);
         }
-        return array;
+        return data;
+    }
+
+    public void printArray(int[] data){
+        for (int i = 0; i < data.length; i++) {
+            System.out.println(data[i]);
+        }
     }
 }

@@ -4,6 +4,7 @@ public class BubbleSort implements Sorter {
 /*
  * BubbleSort bringt in der 0. Itteration die höchste Zahl aus dem Array ganz ans Ende indem er Stelle für Stelle immer 2 Zahlen vergleicht und die höhere Zahl immer richtung ende Zeigt
  * In der 1. Itteration wird das gleiche dann mit der zweithöchsten Zahl gemacht wobei der letzte mögliche Vergleich ausgelassen wird weil man weiß das die letzte Zahl höher sein muss
+ * Visual Showcase: https://youtu.be/kPRA0W1kECg?t=241
  */
 
     @Override

@@ -15,7 +15,7 @@ public class SorterTest {
 
     @BeforeAll
     static void start() {
-        //addAlgorithms(new BubbleSort());
+        addAlgorithms(new BubbleSort());
         addAlgorithms(new SelectionSort());
     }
 

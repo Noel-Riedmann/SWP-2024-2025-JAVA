@@ -3,7 +3,7 @@ package at.riedmann.algorithms.sorting;
 public class SelectionSort implements Sorter {
     /*
      * SelectionSort wählt immer die kleinste Zahl und fügt diese in die neue Liste hinzu
-     * W.I.P.
+     * Visual Showcase: https://youtu.be/kPRA0W1kECg
      */
 
     @Override
